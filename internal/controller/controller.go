@@ -71,7 +71,7 @@ func (m *MusicLibController) SaveSong(ctx *gin.Context) {
 	songResp.Group = song.Group
 	songResp.Song = song.Song
 
-	ctx.JSON(201, songResp) //////////////////////////////////////////////////////////////////////////////
+	ctx.JSON(201, songResp)
 }
 
 // @Summary Get song text by group and song name
