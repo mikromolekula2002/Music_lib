@@ -32,6 +32,6 @@ func (r *Router) SetRoutes(envType string) {
 
 	if envType == "debug" {
 		r.Gin.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
+		gin.SetMode(gin.DebugMode)
 	}
-	// После этого Swagger UI будет доступен по адресу http://localhost:8080/swagger/index.html.
 }

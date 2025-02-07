@@ -1,0 +1,20 @@
+
+ENV_TYPE=debug
+
+DB_HOST=localhost
+DB_PORT=5432
+DB_USER=postgres
+DB_PASSWORD=******
+DB_NAME=music_library
+
+SERVER_PORT=8080
+
+#info or debug
+LOGGER_LEVEL=debug
+#stdout or file
+LOGGER_OUT=stdout
+LOGGER_FILEPATH=/logger/app.log
+
+#openapi 
+MUSIC_API_HOST=localhost:8006
+MUSIC_BASE_URL=http://localhost:8006 
